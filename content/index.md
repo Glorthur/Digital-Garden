@@ -10,9 +10,14 @@ title: Gloria's Digital Garden
     --dg-blue-2: #2563eb;
     --dg-ice: rgba(255, 255, 255, 0.92);
     --dg-ice-2: rgba(255, 255, 255, 0.72);
-    --dg-teal: rgba(13, 148, 136, 0.16);
-    --dg-sky: rgba(14, 165, 233, 0.14);
-    --dg-slate: rgba(100, 116, 139, 0.16);
+
+    /* Monochrome card haze (closer to black/white) */
+    --dg-paper: rgba(255, 255, 255, 0.92);
+    --dg-paper-2: rgba(245, 245, 245, 0.86);
+    --dg-smoke-1: rgba(0, 0, 0, 0.07);
+    --dg-smoke-2: rgba(0, 0, 0, 0.045);
+    --dg-smoke-3: rgba(0, 0, 0, 0.03);
+    --dg-glow: rgba(255, 255, 255, 0.82);
   }
 
   .dg-hero {
@@ -206,10 +211,10 @@ title: Gloria's Digital Garden
     border: 1px solid color-mix(in srgb, var(--lightgray), transparent 35%);
     margin-bottom: 0.75rem;
     background:
-      radial-gradient(160px 120px at 18% 30%, var(--dg-sky), transparent 62%),
-      radial-gradient(180px 130px at 82% 22%, var(--dg-teal), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, var(--dg-slate), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(180px 140px at 18% 22%, var(--dg-glow), transparent 62%),
+      radial-gradient(260px 180px at 85% 18%, var(--dg-smoke-1), transparent 64%),
+      radial-gradient(320px 200px at 52% 125%, var(--dg-smoke-2), transparent 68%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
     position: relative;
     overflow: hidden;
   }
@@ -253,42 +258,42 @@ title: Gloria's Digital Garden
 
   .dg-thumb.alt-ops {
     background:
-      radial-gradient(170px 130px at 20% 30%, rgba(14, 165, 233, 0.18), transparent 62%),
-      radial-gradient(180px 140px at 80% 24%, rgba(37, 99, 235, 0.14), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(200px 150px at 16% 28%, var(--dg-glow), transparent 62%),
+      radial-gradient(240px 170px at 78% 18%, var(--dg-smoke-1), transparent 64%),
+      radial-gradient(320px 200px at 55% 128%, var(--dg-smoke-3), transparent 68%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
   }
 
   .dg-thumb.alt-career {
     background:
-      radial-gradient(170px 130px at 22% 26%, rgba(245, 158, 11, 0.14), transparent 62%),
-      radial-gradient(190px 140px at 80% 24%, rgba(14, 165, 233, 0.12), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(220px 160px at 24% 18%, var(--dg-glow), transparent 62%),
+      radial-gradient(260px 180px at 84% 22%, var(--dg-smoke-2), transparent 64%),
+      radial-gradient(320px 200px at 56% 132%, var(--dg-smoke-1), transparent 70%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
   }
 
   .dg-thumb.alt-systems {
     background:
-      radial-gradient(170px 130px at 18% 30%, rgba(34, 197, 94, 0.12), transparent 62%),
-      radial-gradient(200px 150px at 82% 25%, rgba(13, 148, 136, 0.14), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(200px 150px at 20% 26%, var(--dg-glow), transparent 62%),
+      radial-gradient(280px 200px at 86% 16%, var(--dg-smoke-1), transparent 64%),
+      radial-gradient(340px 220px at 52% 132%, var(--dg-smoke-2), transparent 70%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
   }
 
   .dg-thumb.alt-learning {
     background:
-      radial-gradient(190px 140px at 22% 26%, rgba(99, 102, 241, 0.13), transparent 62%),
-      radial-gradient(200px 150px at 80% 24%, rgba(236, 72, 153, 0.1), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(220px 160px at 18% 18%, var(--dg-glow), transparent 62%),
+      radial-gradient(280px 200px at 82% 24%, var(--dg-smoke-1), transparent 66%),
+      radial-gradient(360px 240px at 55% 130%, var(--dg-smoke-3), transparent 70%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
   }
 
   .dg-thumb.alt-hr {
     background:
-      radial-gradient(190px 140px at 22% 26%, rgba(244, 63, 94, 0.11), transparent 62%),
-      radial-gradient(200px 150px at 80% 24%, rgba(245, 158, 11, 0.12), transparent 62%),
-      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+      radial-gradient(220px 160px at 24% 22%, var(--dg-glow), transparent 62%),
+      radial-gradient(260px 190px at 84% 18%, var(--dg-smoke-2), transparent 66%),
+      radial-gradient(340px 220px at 52% 132%, var(--dg-smoke-1), transparent 70%),
+      linear-gradient(180deg, var(--dg-paper), var(--dg-paper-2));
   }
 
   .dg-card h3 {
