@@ -21,6 +21,22 @@ title: Gloria's Digital Garden
       radial-gradient(900px 520px at 50% 120%, rgba(255, 255, 255, 0.06), transparent 60%),
       linear-gradient(180deg, var(--dg-navy), var(--dg-navy-2));
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dg-hero::after {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background:
+      radial-gradient(closest-side, rgba(255, 255, 255, 0.12), transparent 65%),
+      radial-gradient(closest-side, rgba(37, 99, 235, 0.18), transparent 62%);
+    filter: blur(18px);
+    opacity: 0.75;
+    transform: translate3d(-6%, -2%, 0);
+    animation: dg-float 10s ease-in-out infinite;
+    pointer-events: none;
   }
 
   /* Mobile-first tweaks */
@@ -49,6 +65,33 @@ title: Gloria's Digital Garden
 
     .dg-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @keyframes dg-float {
+    0% { transform: translate3d(-6%, -2%, 0) rotate(-2deg); }
+    50% { transform: translate3d(4%, 3%, 0) rotate(2deg); }
+    100% { transform: translate3d(-6%, -2%, 0) rotate(-2deg); }
+  }
+
+  @keyframes dg-sheen {
+    0% { transform: translateX(-55%) skewX(-12deg); opacity: 0.0; }
+    18% { opacity: 0.18; }
+    45% { opacity: 0.12; }
+    100% { transform: translateX(140%) skewX(-12deg); opacity: 0.0; }
+  }
+
+  @keyframes dg-pop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-2px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dg-hero::after,
+    .dg-thumb::after,
+    .dg-card {
+      animation: none !important;
+      transition: none !important;
     }
   }
 
@@ -146,6 +189,12 @@ title: Gloria's Digital Garden
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.74));
     overflow: hidden;
     position: relative;
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  }
+
+  .dg-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.08);
   }
 
   .dg-thumb {
@@ -157,6 +206,45 @@ title: Gloria's Digital Garden
       radial-gradient(140px 110px at 82% 20%, rgba(132, 165, 157, 0.55), transparent 62%),
       radial-gradient(220px 140px at 55% 120%, rgba(40, 75, 99, 0.35), transparent 65%),
       linear-gradient(180deg, rgba(6, 11, 26, 0.92), rgba(11, 22, 52, 0.88));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .dg-thumb::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.22) 40%, transparent 75%);
+    width: 60%;
+    transform: translateX(-55%) skewX(-12deg);
+    opacity: 0;
+    animation: dg-sheen 5.5s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  .dg-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+  }
+
+  .dg-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: rgba(255, 255, 255, 0.85);
+    opacity: 0.95;
+  }
+
+  .dg-card:hover .dg-icon {
+    animation: dg-pop 180ms ease forwards;
   }
 
   .dg-thumb.alt-ops {
@@ -240,27 +328,75 @@ title: Gloria's Digital Garden
   <h2>Categories</h2>
   <div class="dg-grid">
     <div class="dg-card">
-      <div class="dg-thumb alt-ops"></div>
+      <div class="dg-thumb alt-ops">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19V5" />
+            <path d="M4 19h16" />
+            <path d="M8 16v-5" />
+            <path d="M12 16V8" />
+            <path d="M16 16v-3" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./Data-and-Operations">Data and Operations</a></h3>
       <p>Process, reporting, CRM hygiene, migration planning, and getting reliable outputs.</p>
     </div>
     <div class="dg-card">
-      <div class="dg-thumb alt-career"></div>
+      <div class="dg-thumb alt-career">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 6h4" />
+            <path d="M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1" />
+            <path d="M4 9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9z" />
+            <path d="M8 12h8" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./Career-and-Growth">Career and Growth</a></h3>
       <p>Communication, positioning, professional habits, and long-term skill-building.</p>
     </div>
     <div class="dg-card">
-      <div class="dg-thumb alt-systems"></div>
+      <div class="dg-thumb alt-systems">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="6" cy="12" r="2" />
+            <circle cx="18" cy="6" r="2" />
+            <circle cx="18" cy="18" r="2" />
+            <path d="M8 12h8" />
+            <path d="M16.6 7.2 8.9 11" />
+            <path d="M16.6 16.8 8.9 13" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./Systems">Systems</a></h3>
       <p>How tools and workflows interact, where they break, and how to make them resilient.</p>
     </div>
     <div class="dg-card">
-      <div class="dg-thumb alt-learning"></div>
+      <div class="dg-thumb alt-learning">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19a2 2 0 0 0 2 2h12" />
+            <path d="M6 2h11a2 2 0 0 1 2 2v16" />
+            <path d="M6 2v15a2 2 0 0 0 2 2h13" />
+            <path d="M9 6h7" />
+            <path d="M9 10h7" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./Learning">Learning</a></h3>
       <p>Study notes, experiments, and drafts that get clearer through writing.</p>
     </div>
     <div class="dg-card">
-      <div class="dg-thumb alt-hr"></div>
+      <div class="dg-thumb alt-hr">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 11a4 4 0 1 1-8 0" />
+            <path d="M12 15c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z" />
+            <path d="M12 3v4" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./HR-and-People-Ops">HR and People Ops</a></h3>
       <p>People operations notes: recruiting ops, HR workflows, and practical team systems.</p>
     </div>
