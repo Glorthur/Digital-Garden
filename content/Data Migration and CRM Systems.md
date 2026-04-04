@@ -1,5 +1,5 @@
 ---
-title: Untitled 1
+title: Data Migration and CRM Systems
 tags:
   - data
   - crm
@@ -26,7 +26,7 @@ tags:
   }
 </style>
 
-# Untitled 1
+# Data Migration and CRM Systems
 
 Data migration is not just a file transfer exercise. It is the process of moving information from one system to another while protecting structure, meaning, and operational trust.
 
