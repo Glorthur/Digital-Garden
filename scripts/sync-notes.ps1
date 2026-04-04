@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$source = Join-Path (Split-Path -Parent $repoRoot) "Everything"
+$source = Join-Path (Split-Path -Parent $repoRoot) "notes"
 $destination = Join-Path $repoRoot "content"
 
 if (-not (Test-Path $source)) {
@@ -14,10 +14,8 @@ if (Test-Path $destination) {
 
 New-Item -ItemType Directory -Path $destination -Force | Out-Null
 
-robocopy $source $destination /E /NFL /NDL /NJH /NJS /NP | Out-Null
-
-if ($LASTEXITCODE -gt 7) {
-  throw "robocopy failed with exit code $LASTEXITCODE"
+Get-ChildItem -LiteralPath $source -Force | ForEach-Object {
+  Copy-Item -LiteralPath $_.FullName -Destination $destination -Recurse -Force
 }
 
 foreach ($excluded in @(".obsidian", ".git")) {

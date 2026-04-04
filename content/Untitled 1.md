@@ -1,5 +1,5 @@
 ---
-title: Data Migration and CRM Systems
+title: Untitled 1
 tags:
   - data
   - crm
@@ -26,7 +26,7 @@ tags:
   }
 </style>
 
-# Data Migration and CRM Systems
+# Untitled 1
 
 Data migration is not just a file transfer exercise. It is the process of moving information from one system to another while protecting structure, meaning, and operational trust.
 
@@ -108,4 +108,4 @@ If those links break, the system may still look populated while being functional
 
 The point of a CRM migration is not to prove that data was moved. The point is to create a system people can trust enough to actually use.
 
-[[Welcome]]
+[[index]]
