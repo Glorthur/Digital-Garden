@@ -23,6 +23,22 @@ title: Gloria's Digital Garden
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
   }
 
+  /* Quartz auto-adds anchor icons to headings; hide them on the homepage */
+  .dg-hero a[role="anchor"],
+  .dg-section a[role="anchor"],
+  .dg-card a[role="anchor"] {
+    display: none !important;
+  }
+
+  /* Quartz styles internal links; force readable buttons on the dark hero */
+  .dg-hero a.dg-btn {
+    color: var(--dg-ice) !important;
+  }
+
+  .dg-hero a.dg-btn.ghost {
+    color: var(--dg-ice-2) !important;
+  }
+
   .dg-kicker {
     color: var(--dg-ice-2);
     letter-spacing: 0.02em;
