@@ -3,18 +3,28 @@ title: Gloria's Digital Garden
 ---
 
 <style>
+  :root {
+    --dg-navy: #060b1a;
+    --dg-navy-2: #0b1634;
+    --dg-blue: #1d4ed8;
+    --dg-blue-2: #2563eb;
+    --dg-ice: rgba(255, 255, 255, 0.92);
+    --dg-ice-2: rgba(255, 255, 255, 0.72);
+  }
+
   .dg-hero {
     padding: 1.25rem 1.25rem;
-    border: 1px solid var(--lightgray);
+    border: 1px solid color-mix(in srgb, var(--dg-blue), rgba(255, 255, 255, 0.2) 70%);
     border-radius: 1.1rem;
-    background:
-      radial-gradient(900px 350px at 12% 0%, rgba(40, 75, 99, 0.18), transparent 60%),
-      radial-gradient(700px 320px at 90% 10%, rgba(132, 165, 157, 0.16), transparent 55%),
-      linear-gradient(180deg, rgba(250, 248, 248, 0.75), rgba(250, 248, 248, 0.2));
+    background: radial-gradient(900px 380px at 10% 0%, rgba(37, 99, 235, 0.35), transparent 55%),
+      radial-gradient(700px 360px at 85% 20%, rgba(29, 78, 216, 0.25), transparent 50%),
+      radial-gradient(900px 520px at 50% 120%, rgba(255, 255, 255, 0.06), transparent 60%),
+      linear-gradient(180deg, var(--dg-navy), var(--dg-navy-2));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
   }
 
   .dg-kicker {
-    color: var(--darkgray);
+    color: var(--dg-ice-2);
     letter-spacing: 0.02em;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -25,11 +35,12 @@ title: Gloria's Digital Garden
     margin: 0 0 0.6rem 0;
     font-size: 2.2rem;
     line-height: 1.1;
+    color: var(--dg-ice);
   }
 
   .dg-subtitle {
     margin: 0 0 1.1rem 0;
-    color: var(--darkgray);
+    color: var(--dg-ice-2);
     max-width: 65ch;
   }
 
@@ -47,24 +58,24 @@ title: Gloria's Digital Garden
     gap: 0.5rem;
     padding: 0.55rem 0.85rem;
     border-radius: 999px;
-    border: 1px solid var(--lightgray);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     text-decoration: none;
     font-weight: 600;
   }
 
   .dg-btn.primary {
-    background: var(--secondary);
-    border-color: var(--secondary);
-    color: var(--light);
+    background: linear-gradient(180deg, var(--dg-blue-2), var(--dg-blue));
+    border-color: rgba(255, 255, 255, 0.14);
+    color: white;
   }
 
   .dg-btn.primary:hover {
-    color: var(--light);
-    background: color-mix(in srgb, var(--secondary), black 10%);
+    color: white;
+    filter: brightness(1.05);
   }
 
   .dg-btn.ghost:hover {
-    border-color: color-mix(in srgb, var(--secondary), var(--lightgray) 55%);
+    border-color: rgba(255, 255, 255, 0.32);
   }
 
   .dg-grid {
@@ -78,7 +89,7 @@ title: Gloria's Digital Garden
     border: 1px solid var(--lightgray);
     border-radius: 1rem;
     padding: 1rem 1rem;
-    background: var(--light);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.74));
   }
 
   .dg-card h3 {
