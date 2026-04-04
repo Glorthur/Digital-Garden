@@ -22,19 +22,16 @@ I use this space to think in public, document what I am learning, and collect id
 - Use search to jump directly to topics
 - Follow links between notes to explore related ideas
 
-## Featured Areas
+## Featured Notes
 
-### Data and Operations
+- [[Data Migration and CRM Systems]]
 
-Notes on process improvement, reporting, analysis, and practical systems work.
+## Categories
 
-### Career and Growth
-
-Thoughts on learning, positioning, communication, and professional development.
-
-### Working Notes
-
-Rougher ideas, experiments, and in-progress thinking that may later become more complete pieces.
+- [[Data and Operations]]
+- [[Career and Growth]]
+- [[Systems]]
+- [[Learning]]
 
 ## About This Site
 
