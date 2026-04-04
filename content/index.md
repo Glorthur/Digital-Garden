@@ -11,14 +11,10 @@ title: Gloria's Digital Garden
     --dg-ice: rgba(255, 255, 255, 0.92);
     --dg-ice-2: rgba(255, 255, 255, 0.72);
 
-    /* Card thumbnails: "Graphite Glass" (mostly B/W with a tiny cool tint) */
-    --dg-graphite-0: rgba(2, 6, 23, 0.92);
-    --dg-graphite-1: rgba(15, 23, 42, 0.92);
-    --dg-graphite-2: rgba(30, 41, 59, 0.62);
-    --dg-cool-1: rgba(96, 165, 250, 0.10);
-    --dg-cool-2: rgba(125, 211, 252, 0.08);
-    --dg-glow-w: rgba(255, 255, 255, 0.18);
-    --dg-shadow-b: rgba(0, 0, 0, 0.28);
+    /* Card thumbnails: soft pastel gradients (match screenshot) */
+    --dg-teal: rgba(13, 148, 136, 0.16);
+    --dg-sky: rgba(14, 165, 233, 0.14);
+    --dg-slate: rgba(100, 116, 139, 0.16);
   }
 
   .dg-hero {
@@ -212,10 +208,10 @@ title: Gloria's Digital Garden
     border: 1px solid color-mix(in srgb, var(--lightgray), transparent 35%);
     margin-bottom: 0.75rem;
     background:
-      radial-gradient(180px 140px at 16% 28%, var(--dg-glow-w), transparent 62%),
-      radial-gradient(260px 190px at 86% 20%, var(--dg-cool-1), transparent 64%),
-      radial-gradient(360px 240px at 55% 135%, var(--dg-shadow-b), transparent 70%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(160px 120px at 18% 30%, var(--dg-sky), transparent 62%),
+      radial-gradient(180px 130px at 82% 22%, var(--dg-teal), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, var(--dg-slate), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
     position: relative;
     overflow: hidden;
   }
@@ -225,13 +221,6 @@ title: Gloria's Digital Garden
     position: absolute;
     inset: 0;
     background:
-      repeating-linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 0.04) 0px,
-        rgba(255, 255, 255, 0.04) 1px,
-        transparent 1px,
-        transparent 8px
-      ),
       linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.14) 40%, transparent 75%);
     width: 60%;
     transform: translateX(-55%) skewX(-12deg);
@@ -247,18 +236,17 @@ title: Gloria's Digital Garden
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
     display: grid;
     place-items: center;
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
-    backdrop-filter: blur(6px);
   }
 
   .dg-icon svg {
     width: 18px;
     height: 18px;
-    stroke: rgba(255, 255, 255, 0.82);
+    stroke: rgba(17, 24, 39, 0.62);
     opacity: 0.95;
   }
 
@@ -268,42 +256,42 @@ title: Gloria's Digital Garden
 
   .dg-thumb.alt-ops {
     background:
-      radial-gradient(190px 140px at 14% 30%, rgba(255, 255, 255, 0.22), transparent 62%),
-      radial-gradient(260px 190px at 86% 18%, var(--dg-cool-2), transparent 64%),
-      radial-gradient(360px 240px at 52% 138%, var(--dg-shadow-b), transparent 72%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(170px 130px at 20% 30%, rgba(14, 165, 233, 0.18), transparent 62%),
+      radial-gradient(180px 140px at 80% 24%, rgba(37, 99, 235, 0.14), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
   .dg-thumb.alt-career {
     background:
-      radial-gradient(210px 150px at 22% 16%, rgba(255, 255, 255, 0.20), transparent 62%),
-      radial-gradient(280px 200px at 86% 24%, var(--dg-graphite-2), transparent 66%),
-      radial-gradient(360px 240px at 55% 140%, var(--dg-shadow-b), transparent 72%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(170px 130px at 22% 26%, rgba(245, 158, 11, 0.14), transparent 62%),
+      radial-gradient(190px 140px at 80% 24%, rgba(14, 165, 233, 0.12), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
   .dg-thumb.alt-systems {
     background:
-      radial-gradient(190px 140px at 18% 28%, rgba(255, 255, 255, 0.21), transparent 62%),
-      radial-gradient(260px 190px at 86% 16%, var(--dg-cool-1), transparent 66%),
-      radial-gradient(360px 240px at 52% 140%, var(--dg-shadow-b), transparent 72%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(170px 130px at 18% 30%, rgba(34, 197, 94, 0.12), transparent 62%),
+      radial-gradient(200px 150px at 82% 25%, rgba(13, 148, 136, 0.14), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
   .dg-thumb.alt-learning {
     background:
-      radial-gradient(210px 150px at 16% 18%, rgba(255, 255, 255, 0.20), transparent 62%),
-      radial-gradient(280px 200px at 84% 24%, var(--dg-graphite-2), transparent 66%),
-      radial-gradient(360px 240px at 56% 138%, var(--dg-shadow-b), transparent 72%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(190px 140px at 22% 26%, rgba(99, 102, 241, 0.13), transparent 62%),
+      radial-gradient(200px 150px at 80% 24%, rgba(236, 72, 153, 0.1), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
   .dg-thumb.alt-hr {
     background:
-      radial-gradient(210px 150px at 22% 22%, rgba(255, 255, 255, 0.20), transparent 62%),
-      radial-gradient(270px 200px at 86% 18%, var(--dg-cool-2), transparent 66%),
-      radial-gradient(360px 240px at 54% 140%, var(--dg-shadow-b), transparent 72%),
-      linear-gradient(180deg, var(--dg-graphite-1), var(--dg-graphite-0));
+      radial-gradient(190px 140px at 22% 26%, rgba(244, 63, 94, 0.11), transparent 62%),
+      radial-gradient(200px 150px at 80% 24%, rgba(245, 158, 11, 0.12), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
   .dg-card h3 {
