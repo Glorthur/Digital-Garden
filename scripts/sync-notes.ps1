@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$source = Join-Path (Split-Path -Parent $repoRoot) "notes"
+$source = Join-Path (Split-Path -Parent $repoRoot) "Everything"
 $destination = Join-Path $repoRoot "content"
 
 if (-not (Test-Path $source)) {
