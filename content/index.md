@@ -23,6 +23,35 @@ title: Gloria's Digital Garden
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
   }
 
+  /* Mobile-first tweaks */
+  @media (max-width: 800px) {
+    .dg-hero {
+      padding: 1rem 1rem;
+      border-radius: 0.9rem;
+    }
+
+    .dg-title {
+      font-size: 1.7rem;
+    }
+
+    .dg-subtitle {
+      font-size: 1rem;
+    }
+
+    .dg-actions {
+      gap: 0.5rem;
+    }
+
+    .dg-actions .dg-btn {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .dg-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   /* Quartz auto-adds anchor icons to headings; hide them on the homepage */
   .dg-hero a[role="anchor"],
   .dg-section a[role="anchor"],
@@ -177,6 +206,10 @@ title: Gloria's Digital Garden
     <div class="dg-card">
       <h3><a href="./Learning">Learning</a></h3>
       <p>Study notes, experiments, and drafts that get clearer through writing.</p>
+    </div>
+    <div class="dg-card">
+      <h3><a href="./HR-and-People-Ops">HR and People Ops</a></h3>
+      <p>People operations notes: recruiting ops, HR workflows, and practical team systems.</p>
     </div>
   </div>
   <p class="dg-muted">Tip: use the left sidebar Explorer or search to jump to anything fast.</p>
