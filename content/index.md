@@ -61,6 +61,7 @@ title: Gloria's Digital Garden
     border: 1px solid rgba(255, 255, 255, 0.18);
     text-decoration: none;
     font-weight: 600;
+    color: var(--dg-ice);
   }
 
   .dg-btn.primary {
@@ -76,6 +77,14 @@ title: Gloria's Digital Garden
 
   .dg-btn.ghost:hover {
     border-color: rgba(255, 255, 255, 0.32);
+  }
+
+  .dg-btn.ghost {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .dg-btn.ghost:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .dg-grid {
@@ -164,5 +173,5 @@ title: Gloria's Digital Garden
     <li><a href="./Data-and-Operations">Data and Operations</a></li>
     <li><a href="./Systems">Systems</a></li>
   </ul>
-  <p class="dg-muted">I’ll keep this list updated as new notes land.</p>
+  <p class="dg-muted">I'll keep this list updated as new notes land.</p>
 </div>
