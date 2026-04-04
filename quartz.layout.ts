@@ -54,10 +54,9 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Graph(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ConditionalRender({
-      component: Component.DesktopOnly(Component.TableOfContents()),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    // Keep the right sidebar useful on the homepage (TOC),
+    // but avoid the heavier widgets like Graph/Backlinks.
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.ConditionalRender({
       component: Component.Backlinks(),
       condition: (page) => page.fileData.slug !== "index",
