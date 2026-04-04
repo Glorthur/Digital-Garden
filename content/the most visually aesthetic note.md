@@ -1,5 +1,6 @@
 ---
 title: The Most Visually Aesthetic Note
+draft: true
 tags:
   - writing
   - systems
