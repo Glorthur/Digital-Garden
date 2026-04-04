@@ -3,6 +3,8 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $source = Join-Path (Split-Path -Parent $repoRoot) "notes"
 $destination = Join-Path $repoRoot "content"
+$excludeDirs = @(".obsidian", ".git")
+$excludeExtensions = @(".canvas", ".base")
 
 if (-not (Test-Path $source)) {
   throw "Notes folder not found: $source"
@@ -14,15 +16,35 @@ if (Test-Path $destination) {
 
 New-Item -ItemType Directory -Path $destination -Force | Out-Null
 
-Get-ChildItem -LiteralPath $source -Force | ForEach-Object {
-  Copy-Item -LiteralPath $_.FullName -Destination $destination -Recurse -Force
-}
+$sourceResolved = (Resolve-Path -LiteralPath $source).Path
 
-foreach ($excluded in @(".obsidian", ".git")) {
-  $excludedPath = Join-Path $destination $excluded
-  if (Test-Path $excludedPath) {
-    Remove-Item -LiteralPath $excludedPath -Recurse -Force
+Get-ChildItem -LiteralPath $sourceResolved -Recurse -Force | ForEach-Object {
+  $full = $_.FullName
+
+  if ($_.PSIsContainer) {
+    return
   }
+
+  # Skip Obsidian config dirs anywhere in the tree.
+  foreach ($d in $excludeDirs) {
+    if ($full -match [regex]::Escape([IO.Path]::DirectorySeparatorChar + $d + [IO.Path]::DirectorySeparatorChar)) {
+      return
+    }
+  }
+
+  if ($excludeExtensions -contains $_.Extension) {
+    return
+  }
+
+  $relative = $full.Substring($sourceResolved.Length).TrimStart([IO.Path]::DirectorySeparatorChar)
+  $destPath = Join-Path $destination $relative
+  $destDir = Split-Path -Parent $destPath
+
+  if (-not (Test-Path -LiteralPath $destDir)) {
+    New-Item -ItemType Directory -Path $destDir -Force | Out-Null
+  }
+
+  Copy-Item -LiteralPath $full -Destination $destPath -Force
 }
 
 Write-Output "Synced notes from $source to $destination"
