@@ -144,6 +144,54 @@ title: Gloria's Digital Garden
     border-radius: 1rem;
     padding: 1rem 1rem;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.74));
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dg-thumb {
+    height: 84px;
+    border-radius: 14px;
+    border: 1px solid color-mix(in srgb, var(--lightgray), transparent 35%);
+    margin-bottom: 0.75rem;
+    background: radial-gradient(120px 90px at 22% 30%, rgba(37, 99, 235, 0.55), transparent 60%),
+      radial-gradient(140px 110px at 82% 20%, rgba(132, 165, 157, 0.55), transparent 62%),
+      radial-gradient(220px 140px at 55% 120%, rgba(40, 75, 99, 0.35), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.92), rgba(11, 22, 52, 0.88));
+  }
+
+  .dg-thumb.alt-ops {
+    background: radial-gradient(140px 110px at 20% 30%, rgba(29, 78, 216, 0.62), transparent 60%),
+      radial-gradient(170px 120px at 75% 20%, rgba(14, 165, 233, 0.45), transparent 62%),
+      radial-gradient(240px 150px at 55% 120%, rgba(40, 75, 99, 0.38), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.94), rgba(10, 18, 40, 0.88));
+  }
+
+  .dg-thumb.alt-career {
+    background: radial-gradient(160px 120px at 25% 25%, rgba(245, 158, 11, 0.42), transparent 62%),
+      radial-gradient(150px 120px at 80% 25%, rgba(37, 99, 235, 0.45), transparent 62%),
+      radial-gradient(240px 150px at 55% 120%, rgba(132, 165, 157, 0.3), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.92), rgba(11, 22, 52, 0.88));
+  }
+
+  .dg-thumb.alt-systems {
+    background: radial-gradient(140px 110px at 18% 30%, rgba(34, 197, 94, 0.38), transparent 62%),
+      radial-gradient(160px 120px at 82% 25%, rgba(29, 78, 216, 0.5), transparent 62%),
+      radial-gradient(240px 150px at 55% 120%, rgba(99, 102, 241, 0.25), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.94), rgba(10, 18, 40, 0.88));
+  }
+
+  .dg-thumb.alt-learning {
+    background: radial-gradient(160px 120px at 22% 25%, rgba(99, 102, 241, 0.5), transparent 62%),
+      radial-gradient(170px 120px at 80% 25%, rgba(236, 72, 153, 0.28), transparent 62%),
+      radial-gradient(240px 150px at 55% 120%, rgba(14, 165, 233, 0.22), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.92), rgba(11, 22, 52, 0.88));
+  }
+
+  .dg-thumb.alt-hr {
+    background: radial-gradient(160px 120px at 22% 25%, rgba(244, 63, 94, 0.32), transparent 62%),
+      radial-gradient(170px 120px at 80% 25%, rgba(245, 158, 11, 0.28), transparent 62%),
+      radial-gradient(240px 150px at 55% 120%, rgba(37, 99, 235, 0.22), transparent 65%),
+      linear-gradient(180deg, rgba(6, 11, 26, 0.92), rgba(11, 22, 52, 0.88));
   }
 
   .dg-card h3 {
@@ -192,22 +240,27 @@ title: Gloria's Digital Garden
   <h2>Categories</h2>
   <div class="dg-grid">
     <div class="dg-card">
+      <div class="dg-thumb alt-ops"></div>
       <h3><a href="./Data-and-Operations">Data and Operations</a></h3>
       <p>Process, reporting, CRM hygiene, migration planning, and getting reliable outputs.</p>
     </div>
     <div class="dg-card">
+      <div class="dg-thumb alt-career"></div>
       <h3><a href="./Career-and-Growth">Career and Growth</a></h3>
       <p>Communication, positioning, professional habits, and long-term skill-building.</p>
     </div>
     <div class="dg-card">
+      <div class="dg-thumb alt-systems"></div>
       <h3><a href="./Systems">Systems</a></h3>
       <p>How tools and workflows interact, where they break, and how to make them resilient.</p>
     </div>
     <div class="dg-card">
+      <div class="dg-thumb alt-learning"></div>
       <h3><a href="./Learning">Learning</a></h3>
       <p>Study notes, experiments, and drafts that get clearer through writing.</p>
     </div>
     <div class="dg-card">
+      <div class="dg-thumb alt-hr"></div>
       <h3><a href="./HR-and-People-Ops">HR and People Ops</a></h3>
       <p>People operations notes: recruiting ops, HR workflows, and practical team systems.</p>
     </div>
