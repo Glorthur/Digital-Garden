@@ -1,1 +1,5 @@
-This is A test 
+---
+draft: true
+---
+
+This note is hidden from the public site.

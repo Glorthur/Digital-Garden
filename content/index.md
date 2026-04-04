@@ -1,13 +1,41 @@
-# Obsidian Notes
+---
+title: Gloria's Digital Garden
+---
 
-This is the home page for your published notes.
+# Gloria's Digital Garden
 
-- Put new Markdown files in this `notes` folder.
-- Link between notes using Obsidian wikilinks like `[[My Note]]`.
-- Run the Quartz sync command before publishing changes.
+Welcome. This is where I share working notes, reflections, and practical thinking across data, operations, systems, and career growth.
 
-## Next Steps
+I use this space to think in public, document what I am learning, and collect ideas worth revisiting.
 
-1. Add a note such as `my-first-note.md`.
-2. Edit this folder in Obsidian.
-3. Publish from the Quartz site in the `quartz` subfolder.
+[Visit My Portfolio](https://glorthur.github.io)
+
+## What You'll Find Here
+
+- Notes on data, workflows, and systems thinking
+- Career and professional development reflections
+- Ideas, experiments, and things I am still figuring out
+
+## Start Here
+
+- Browse notes using the sidebar
+- Use search to jump directly to topics
+- Follow links between notes to explore related ideas
+
+## Featured Areas
+
+### Data and Operations
+
+Notes on process improvement, reporting, analysis, and practical systems work.
+
+### Career and Growth
+
+Thoughts on learning, positioning, communication, and professional development.
+
+### Working Notes
+
+Rougher ideas, experiments, and in-progress thinking that may later become more complete pieces.
+
+## About This Site
+
+This is a living knowledge garden, not a polished blog. Some notes are complete, some are evolving, and some are here because they are useful even before they are finished.
