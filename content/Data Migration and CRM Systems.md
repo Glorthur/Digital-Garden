@@ -1,6 +1,6 @@
 ---
 title: Data Migration and CRM Systems
-description: Tool-agnostic CRM migration playbook: scope, map, clean, validate, cut over, and sign off.
+description: "Tool-agnostic CRM migration playbook: scope, map, clean, validate, cut over, and sign off."
 tags: [data, crm, migration]
 ---
 
@@ -170,16 +170,16 @@ The migration is not complete at go-live. Hypercare is a defined post-launch per
 
 The migration is complete when all of the following are true and signed off by the designated owner.
 
-|Category|Threshold|Sign-off owner|
-|---|---|---|
-|Record migration|>= 99% of in-scope records imported without error|Data steward|
-|Deduplication|0 confirmed duplicate pairs in priority object types|Data steward|
-|Relationship integrity|100% of required relationship links verified via integrity check|CRM admin|
-|Field mapping coverage|100% of required fields mapped; all exclusions documented|CRM admin|
-|Report parity|Top 5 operational reports match baseline outputs within agreed tolerance|Ops lead|
-|Workflow validation|All active automations tested and confirmed in staging|CRM admin|
-|User acceptance|Sign-off from at least one representative user per team|Ops lead|
-|Rollback window closed|Source system formally decommissioned or archived|Executive sponsor|
+| Category               | Threshold                                                                | Sign-off owner    |
+| ---------------------- | ------------------------------------------------------------------------ | ----------------- |
+| Record migration       | >= 99% of in-scope records imported without error                        | Data steward      |
+| Deduplication          | 0 confirmed duplicate pairs in priority object types                     | Data steward      |
+| Relationship integrity | 100% of required relationship links verified via integrity check         | CRM admin         |
+| Field mapping coverage | 100% of required fields mapped; all exclusions documented                | CRM admin         |
+| Report parity          | Top 5 operational reports match baseline outputs within agreed tolerance | Ops lead          |
+| Workflow validation    | All active automations tested and confirmed in staging                   | CRM admin         |
+| User acceptance        | Sign-off from at least one representative user per team                  | Ops lead          |
+| Rollback window closed | Source system formally decommissioned or archived                        | Executive sponsor |
 
 ---
 
