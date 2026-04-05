@@ -310,6 +310,8 @@ a {
 
     & .center,
     & footer {
+      width: 100%;
+      justify-self: stretch;
       max-width: 100%;
       // Allow the center column to shrink within the grid.
       // `min-width: 100%` forces overflow and causes content to appear "cut off" on the right.
