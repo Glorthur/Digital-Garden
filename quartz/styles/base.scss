@@ -311,7 +311,9 @@ a {
     & .center,
     & footer {
       max-width: 100%;
-      min-width: 100%;
+      // Allow the center column to shrink within the grid.
+      // `min-width: 100%` forces overflow and causes content to appear "cut off" on the right.
+      min-width: 0;
       margin-left: auto;
       margin-right: auto;
       @media all and ($tablet) {
