@@ -294,6 +294,14 @@ title: Gloria's Digital Garden
       linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
   }
 
+  .dg-thumb.alt-essay {
+    background:
+      radial-gradient(190px 140px at 20% 26%, rgba(2, 132, 199, 0.14), transparent 62%),
+      radial-gradient(210px 150px at 80% 22%, rgba(124, 58, 237, 0.10), transparent 62%),
+      radial-gradient(260px 160px at 55% 120%, rgba(100, 116, 139, 0.16), transparent 66%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+  }
+
   .dg-card h3 {
     margin-top: 0.1rem;
     margin-bottom: 0.4rem;
@@ -411,6 +419,20 @@ title: Gloria's Digital Garden
       </div>
       <h3><a href="./HR-and-People-Ops">HR and People Ops</a></h3>
       <p>People operations notes: recruiting ops, HR workflows, and practical team systems.</p>
+    </div>
+    <div class="dg-card">
+      <div class="dg-thumb alt-essay">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" />
+            <path d="M8 8h8" />
+            <path d="M8 12h8" />
+            <path d="M8 16h6" />
+          </svg>
+        </div>
+      </div>
+      <h3><a href="./Personal-Essays">Personal Essays</a></h3>
+      <p>Reflective writing: lessons learned, decisions, work stories, and what I’m building toward.</p>
     </div>
   </div>
   <p class="dg-muted">Tip: use the left sidebar Explorer or search to jump to anything fast.</p>
