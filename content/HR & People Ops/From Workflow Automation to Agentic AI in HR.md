@@ -130,7 +130,7 @@ Bad candidates include:
 - sensitive employee relations cases
 - anything that depends heavily on empathy, confidential nuance, or contested judgment
 
-That line matters. Transactional coordination can move toward the machine. Evaluative judgment should stay with people.
+Transactional coordination can move toward the machine, and Evaluative judgment should stay with people.
 
 ---
 
@@ -144,7 +144,6 @@ The HRBP question is more speculative, so it is worth being careful.
 
 This article is not strong enough to claim that the HRBP role has already split in two across the market. But it is reasonable to say the pressure is moving in that direction. If more of the operational coordination gets absorbed by systems, the human value shifts toward two things: designing the rules and guardrails those systems operate under, and handling the judgment-heavy work that should never have been treated like admin in the first place.
 
-That is a directional change.
 
 ---
 
