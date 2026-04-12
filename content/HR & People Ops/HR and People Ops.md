@@ -12,3 +12,7 @@ Notes on people operations, recruiting ops, HR workflows, and the systems that k
 - recruiting operations
 - HR data hygiene
 - policies, process, and documentation
+
+## Articles
+
+- [[From Workflow Automation to Agentic AI in HR]]
