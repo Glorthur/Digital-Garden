@@ -14,8 +14,6 @@ tags:
   - recruiting
 ---
 
-# From Workflow Automation to Agentic AI in HR
-
 > [!abstract]
 > The useful shift is not from manual work to more workflows. It is from fixed automation to systems that can move work across tools, rules, and channels without a person pushing every step.
 
@@ -23,7 +21,7 @@ HR work usually breaks in the same places. A request crosses three systems. A po
 
 Traditional automation helps until it hits that kind of mess. It is good at fixed sequences and bad at variation. Once the process depends on context, exceptions, or coordination across tools, the workflow tends to jam and a person has to step in.
 
-That is why the current shift matters. The interesting question is no longer how to automate one step. It is how to hand a system an outcome and let it work through the steps needed to get there.
+That is why the current shift matters. The interesting question is how to hand a system an outcome and let it work through the steps needed to get there.
 
 ---
 
