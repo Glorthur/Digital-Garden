@@ -1,6 +1,6 @@
 ---
 title: Research & Writing
-draft: true
+draft: false
 ---
 
 # Research & Writing

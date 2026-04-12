@@ -338,7 +338,7 @@ title: Gloria's Digital Garden
     Notes on data migration, CRM systems, operations, and learning. Some pages are polished, many are in progress, all are useful.
   </p>
   <div class="dg-actions">
-    <a class="dg-btn primary" href="./Data-Migration-and-CRM-Systems">Start Here: CRM Migration</a>
+    <a class="dg-btn primary" href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Start Here: CRM Migration</a>
     <a class="dg-btn ghost" href="./tags">Browse Tags</a>
     <a class="dg-btn ghost" href="https://glorthur.github.io">Portfolio</a>
   </div>
@@ -359,7 +359,7 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./Data-and-Operations">Data and Operations</a></h3>
+      <h3><a href="./Data--and--Operations/Data-and-Operations">Data and Operations</a></h3>
       <p>Process, reporting, CRM hygiene, migration planning, and getting reliable outputs.</p>
     </div>
     <div class="dg-card">
@@ -373,7 +373,7 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./Career-and-Growth">Career and Growth</a></h3>
+      <h3><a href="./Career--and--Growth/Career-and-Growth">Career and Growth</a></h3>
       <p>Communication, positioning, professional habits, and long-term skill-building.</p>
     </div>
     <div class="dg-card">
@@ -389,7 +389,7 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./Systems">Systems</a></h3>
+      <h3><a href="./Data--and--Operations/Systems">Systems</a></h3>
       <p>How tools and workflows interact, where they break, and how to make them resilient.</p>
     </div>
     <div class="dg-card">
@@ -432,7 +432,7 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./HR-and-People-Ops">HR and People Ops</a></h3>
+      <h3><a href="./HR--and--People-Ops/HR-and-People-Ops">HR and People Ops</a></h3>
       <p>People operations notes: recruiting ops, HR workflows, and practical team systems.</p>
     </div>
     <div class="dg-card">
@@ -446,7 +446,7 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./Personal-Essays">Personal Essays</a></h3>
+      <h3><a href="./Personal-Essays/Personal-Essays">Personal Essays</a></h3>
       <p>Reflective writing: lessons learned, decisions, work stories, and what I’m building toward.</p>
     </div>
   </div>
@@ -457,9 +457,9 @@ title: Gloria's Digital Garden
   <h2>Latest</h2>
   <ul>
     <li><a href="./Research-and-Writing">Research and Writing</a></li>
-    <li><a href="./Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></li>
-    <li><a href="./Data-and-Operations">Data and Operations</a></li>
-    <li><a href="./Systems">Systems</a></li>
+    <li><a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></li>
+    <li><a href="./Data--and--Operations/Data-and-Operations">Data and Operations</a></li>
+    <li><a href="./Data--and--Operations/Systems">Systems</a></li>
   </ul>
   <p class="dg-muted">I'll keep this list updated as new notes land.</p>
 </div>
