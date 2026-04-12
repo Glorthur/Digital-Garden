@@ -33,7 +33,7 @@ In this article, I do not mean a chatbot with a nice interface. I do not mean a 
 
 If a system only answers a question or triggers a fixed sequence, that may still be useful. It is just not what I mean here.
 
-That difference matters in HR because so much of the work sits between systems. A leave request is not always just a leave request. A candidate interview is not always just a calendar invite. The harder part is usually not the transaction itself. It is the routing, checking, interpreting, and coordinating around it.
+That difference matters in HR because so much of the work sits between systems. A leave request is not always just a leave request. A candidate interview is not always just a calendar invite. The harder part is the routing, checking, interpreting, and coordinating around it.
 
 ---
 
@@ -47,19 +47,17 @@ That is where these systems start to matter. They are most useful when the job i
 
 An employee asks a question in Teams. The system checks the HRIS, pulls the relevant policy, routes the approval, triggers the workflow, and replies in the same place. A candidate starts an application, gets questions answered, gets screened, and gets scheduled without a recruiter manually dragging the process forward at each step.
 
-That is the operational distinction. This is less about chat and more about coordination.
+That is the operational distinction; less about chat, and more about coordination.
 
 ---
 
 ## The AMD example: service work without linear headcount growth
 
-One of the better examples in the source set comes from AMD.
-
 AMD used an AI-powered HR agent integrated with SAP SuccessFactors and Microsoft Teams to support a workforce of more than 30,000 employees with a helpdesk team of roughly 15 people. The reported outcomes were strong: an 80 percent reduction in time to resolve inquiries, 50 percent self-service containment, and a 70 percent increase in employee satisfaction.
 
 The more useful point is what the system was actually doing. It was pulling context from the system of record, handling routine requests in the channel employees already used, launching workflows, routing approvals, and escalating more complex cases to human specialists.
 
-That is enough to make the case that something meaningful is changing in HR service delivery. It is not just a prettier FAQ. It is a system doing a chunk of the routing, retrieving, and process movement that used to depend on human coordinators.
+That is enough to show that something real is shifting in HR service delivery. The system is now handling parts of the job that used to rely on coordinators behind the scenes.
 
 It does not prove unlimited autonomy. It does not prove the system can handle novel edge cases safely without human design. It does show that a large employer can use this kind of setup to absorb routine service volume without adding people in lockstep.
 
@@ -75,9 +73,9 @@ Again, the key point is not that a tool answered candidate questions. Plenty of 
 
 That matters because recruiting operations are full of low-prestige work that burns serious time: follow-up, scheduling, rescheduling, status questions, and process drop-off. When that work piles up, recruiters spend less time evaluating candidates and more time trying to keep the machine from stalling.
 
-A system that keeps those logistics moving does not replace the recruiter. It clears a pile of repetitive coordination work off the desk.
+A system that keeps those logistics moving does not replace the recruiter, but It clears a pile of repetitive coordination work off the desk.
 
-That still does not prove these systems should make hiring decisions. It proves they can handle a meaningful share of process management.
+That evidence is nowhere near enough to justify handing over hiring decisions. These systems are better suited to process-heavy parts of recruiting.
 
 ---
 
@@ -193,6 +191,6 @@ The most useful way to read this is not as a grand prediction about the future o
 
 It is a narrower operational point. In the right workflows, these systems can take a significant amount of ugly coordination work off HR's plate: routing, retrieving, scheduling, following up, and moving requests through systems without constant manual intervention.
 
-That gives HR room to spend more time on judgment, manager support, workforce decisions, and the work that actually benefits from human involvement.
+That gives HR room to spend more time on judgment, manager support, workforce decisions, and the work that  benefits from human involvement.
 
 Used well, these systems can take ugly operational work off HR's plate. Used badly, they can scale bad policy, bad data, and bad judgment just as fast.
