@@ -405,7 +405,7 @@ title: Gloria's Digital Garden
         </div>
       </div>
       <h3><a href="./Research-and-Writing">Research and Writing</a></h3>
-      <p>Grounded literature syntheses, research notes, and session summaries generated with NotebookLM and Codex.</p>
+      <p>Grounded literature syntheses, research notes, and session summaries.</p>
     </div>
     <div class="dg-card">
       <div class="dg-thumb alt-learning">

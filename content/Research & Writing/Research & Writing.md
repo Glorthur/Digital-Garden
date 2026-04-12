@@ -7,7 +7,7 @@ aliases:
 
 # Research & Writing
 
-This area stores grounded literature notes, syntheses, and session summaries generated or assisted by Codex and NotebookLM.
+This area stores grounded literature notes, syntheses, and session summaries.
 
 ## Areas
 
