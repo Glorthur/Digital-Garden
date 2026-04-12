@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "Glorthur.github.io/Digital-Garden",
-    ignorePatterns: ["private", "templates", "Templates", ".obsidian", "AGENTS.md"],
+    ignorePatterns: ["private", "templates", "Templates", "Literature Notes", ".obsidian", "AGENTS.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

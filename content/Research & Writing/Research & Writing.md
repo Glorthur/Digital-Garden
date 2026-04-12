@@ -9,18 +9,6 @@ This area stores grounded literature notes, syntheses, and session summaries gen
 
 ## Areas
 
-- [[Literature Notes]]
 - [[Syntheses]]
 - [[Session Summaries]]
 - [[Articles]]
-
-## Suggested Concepts
-
-- [[Corporate Governance]]
-- [[Board Composition]]
-- [[Board Size]]
-- [[Board Independence]]
-- [[Gender Diversity]]
-- [[Agency Theory]]
-- [[Resource Dependence Theory]]
-- [[Ghana]]

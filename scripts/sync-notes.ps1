@@ -5,6 +5,9 @@ $source = Join-Path (Split-Path -Parent $repoRoot) "notes"
 $destination = Join-Path $repoRoot "content"
 $excludeDirs = @(".obsidian", ".git")
 $excludeExtensions = @(".canvas", ".base")
+$excludeRelativePatterns = @(
+  "Research & Writing\Literature Notes\*"
+)
 
 if (-not (Test-Path $source)) {
   throw "Notes folder not found: $source"
@@ -37,6 +40,13 @@ Get-ChildItem -LiteralPath $sourceResolved -Recurse -Force | ForEach-Object {
   }
 
   $relative = $full.Substring($sourceResolved.Length).TrimStart([IO.Path]::DirectorySeparatorChar)
+
+  foreach ($pattern in $excludeRelativePatterns) {
+    if ($relative -like $pattern) {
+      return
+    }
+  }
+
   $destPath = Join-Path $destination $relative
   $destDir = Split-Path -Parent $destPath
 
