@@ -1,6 +1,8 @@
 ---
 title: Research & Writing
 draft: false
+aliases:
+  - Research-and-Writing
 ---
 
 # Research & Writing
