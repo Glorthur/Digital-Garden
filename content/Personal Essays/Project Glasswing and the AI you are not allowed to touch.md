@@ -2,8 +2,6 @@
 title: Project Glasswing and the AI you are not allowed to touch
 type: article
 created: 2026-04-12
-source_notebook: 56750910-bf00-40b5-9772-07e167e7bf30
-source_brief: C:\Users\USER\Desktop\Obsidian\notes\Research & Writing\Syntheses\2026-04-12-project-glasswing-article-raw.md
 status: published
 dg-publish: true
 tags:

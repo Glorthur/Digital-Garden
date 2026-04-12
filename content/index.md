@@ -404,21 +404,6 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
-      <h3><a href="./Research-and-Writing">Research and Writing</a></h3>
-      <p>Grounded literature syntheses, research notes, and session summaries.</p>
-    </div>
-    <div class="dg-card">
-      <div class="dg-thumb alt-learning">
-        <div class="dg-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 19a2 2 0 0 0 2 2h12" />
-            <path d="M6 2h11a2 2 0 0 1 2 2v16" />
-            <path d="M6 2v15a2 2 0 0 0 2 2h13" />
-            <path d="M9 6h7" />
-            <path d="M9 10h7" />
-          </svg>
-        </div>
-      </div>
       <h3><a href="./Learning">Learning</a></h3>
       <p>Study notes, experiments, and drafts that get clearer through writing.</p>
     </div>
@@ -453,13 +438,13 @@ title: Gloria's Digital Garden
   <p class="dg-muted">Tip: use the left sidebar Explorer or search to jump to anything fast.</p>
 </div>
 
-<div class="dg-section">
+  <div class="dg-section">
   <h2>Latest</h2>
   <ul>
-    <li><a href="./Research-and-Writing">Research and Writing</a></li>
     <li><a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></li>
     <li><a href="./Data--and--Operations/Data-and-Operations">Data and Operations</a></li>
     <li><a href="./Data--and--Operations/Systems">Systems</a></li>
+    <li><a href="./Personal-Essays/Project-Glasswing-and-the-AI-you-are-not-allowed-to-touch">Project Glasswing and the AI you are not allowed to touch</a></li>
   </ul>
   <p class="dg-muted">I'll keep this list updated as new notes land.</p>
 </div>

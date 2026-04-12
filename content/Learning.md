@@ -12,3 +12,7 @@ This section holds notes, rough ideas, and experiments that are still becoming c
 - experiments
 - concept breakdowns
 - working drafts
+
+## Related Reading
+
+- [[Project Glasswing and the AI you are not allowed to touch]]

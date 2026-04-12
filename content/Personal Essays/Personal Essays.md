@@ -18,4 +18,4 @@ Short, reflective pieces on work, growth, and decisions. The goal is clarity, no
 
 ## Essays
 
-- Coming soon
+- [[Project Glasswing and the AI you are not allowed to touch]]
