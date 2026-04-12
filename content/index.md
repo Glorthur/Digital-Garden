@@ -404,6 +404,21 @@ title: Gloria's Digital Garden
           </svg>
         </div>
       </div>
+      <h3><a href="./Research-and-Writing">Research and Writing</a></h3>
+      <p>Grounded literature syntheses, research notes, and session summaries generated with NotebookLM and Codex.</p>
+    </div>
+    <div class="dg-card">
+      <div class="dg-thumb alt-learning">
+        <div class="dg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19a2 2 0 0 0 2 2h12" />
+            <path d="M6 2h11a2 2 0 0 1 2 2v16" />
+            <path d="M6 2v15a2 2 0 0 0 2 2h13" />
+            <path d="M9 6h7" />
+            <path d="M9 10h7" />
+          </svg>
+        </div>
+      </div>
       <h3><a href="./Learning">Learning</a></h3>
       <p>Study notes, experiments, and drafts that get clearer through writing.</p>
     </div>
@@ -441,6 +456,7 @@ title: Gloria's Digital Garden
 <div class="dg-section">
   <h2>Latest</h2>
   <ul>
+    <li><a href="./Research-and-Writing">Research and Writing</a></li>
     <li><a href="./Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></li>
     <li><a href="./Data-and-Operations">Data and Operations</a></li>
     <li><a href="./Systems">Systems</a></li>
