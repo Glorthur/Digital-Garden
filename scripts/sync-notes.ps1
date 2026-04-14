@@ -6,6 +6,7 @@ $destination = Join-Path $repoRoot "content"
 $excludeDirs = @(".obsidian", ".git")
 $excludeExtensions = @(".canvas", ".base")
 $excludeRelativePatterns = @(
+  "Untitled.md",
   "Research & Writing\*",
   "Research & Writing\Literature Notes\*"
 )
