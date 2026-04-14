@@ -9,6 +9,7 @@ This section collects notes on reporting, process design, CRM hygiene, workflow 
 ## Included Notes
 
 - [[Data Migration and CRM Systems]]
+- [[Just Enough Structure]]
 
 ## Focus
 
