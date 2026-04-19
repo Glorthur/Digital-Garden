@@ -10,6 +10,7 @@ This section collects notes on reporting, process design, CRM hygiene, workflow 
 
 - [[Data Migration and CRM Systems]]
 - [[Just Enough Structure]]
+- [[How I built four scoped AI workflows as Cursor skills for Startup Operations]]
 
 ## Focus
 
