@@ -28,38 +28,38 @@ I wanted something closer to a set of lightweight operational functions that cou
 
 ## What I Built
 
-The system works because each agent has a narrow role and a defined review path. The boundaries matter as much as the capabilities.
+The system works because each skill has a narrow role and a defined review path. The boundaries matter as much as the capabilities.
 
-| Agent | What it does | What it cannot do | Human review |
-| --- | --- | --- | --- |
-| **Communications Director** | Reviews external content against a six-dimension rubric: clarity, audience fit, claim discipline, IP safety, consistency, and banned language. Flags specific problem lines and suggests draft reframes. | Cannot write publishable copy. Cannot judge technical accuracy. Cannot make IP disclosure decisions. | I read every review before any content changes. Reframes are labeled `not publishable`. |
-| **Ops Integrator** | Pulls live task data from Notion, maps tasks to people, identifies bottlenecks, flags single points of failure, and produces capacity assessments. | Cannot change task status or assignments. Cannot make financial decisions. Cannot access data outside approved databases. | I review every assessment before acting on it. |
-| **Weekly Report Generator** | Queries five Notion databases and synthesizes accomplishments, decisions, remaining tasks, and individual updates into a formatted report page. | Cannot interpret or editorialize. Produces a draft, not a final report. | I review and edit every report before it goes to leadership. |
-| **Adversarial Reviewer** | Stress-tests documents using a structured rubric: Verdict, Blockers, Questions, Scope, Metrics, Assumptions, Risks, Contradictions, and Rewrite plan. | Cannot write final copy. Cannot approve documents. Cannot override human judgment. | The review informs my decisions. I choose what to act on. |
+| Skill                       | What it does                                                                                                                                                                                             | What it cannot do                                                                                                         | Human review                                                                            |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Communications Director** | Reviews external content against a six-dimension rubric: clarity, audience fit, claim discipline, IP safety, consistency, and banned language. Flags specific problem lines and suggests draft reframes. | Cannot write publishable copy. Cannot judge technical accuracy. Cannot make IP disclosure decisions.                      | I read every review before any content changes. Reframes are labeled `not publishable`. |
+| **Ops Integrator**          | Pulls live task data from Notion, maps tasks to people, identifies bottlenecks, flags single points of failure, and produces capacity assessments.                                                       | Cannot change task status or assignments. Cannot make financial decisions. Cannot access data outside approved databases. | I review every assessment before acting on it.                                          |
+| **Weekly Report Generator** | Queries five Notion databases and synthesizes accomplishments, decisions, remaining tasks, and individual updates into a formatted report page.                                                          | Cannot interpret or editorialize. Produces a draft, not a final report.                                                   | I review and edit every report before it goes to leadership.                            |
+| **Adversarial Reviewer**    | Stress-tests documents using a structured rubric: Verdict, Blockers, Questions, Scope, Metrics, Assumptions, Risks, Contradictions, and Rewrite plan.                                                    | Cannot write final copy. Cannot approve documents. Cannot override human judgment.                                        | The review informs my decisions. I choose what to act on.                               |
 
 ### How They Connect
 
-All project data lives in Notion databases. The agents read from these using the Notion MCP (Model Context Protocol) server, so every agent works from the same source of truth.
+All project data lives in Notion databases. The skills read from these using the Notion MCP (Model Context Protocol) server, so every skill works from the same source of truth.
 
-Each agent is defined in a `SKILL.md` file, a structured markdown document that specifies identity, capabilities, boundaries, data access, decision rules, and output formats. I treated these like versioned operational playbooks. When the Comms Director's evaluation rubric needed updating after a colleague's feedback, I changed one file. Every future review automatically used the new criteria.
+Each skill is defined in a `SKILL.md` file, a structured markdown document that specifies identity, capabilities, boundaries, data access, decision rules, and output formats. I treated these like versioned operational playbooks. When the Comms Director's evaluation rubric needed updating after a colleague's feedback, I changed one file. Every future review automatically used the new criteria.
 
 Every significant document goes through structured adversarial review before it leaves the building.
 
-For tasks requiring synthesis across many sources, I offload heavy document processing to Google's NotebookLM via the `notebooklm-py` CLI. The agents coordinate the queries; NotebookLM does the reading.
+For tasks requiring synthesis across many sources, I offload heavy document processing to Google's NotebookLM via the `notebooklm-py` CLI. The Skills coordinate the queries; NotebookLM does the reading.
 
 ---
 
 ## What Worked in Practice
 
-**The Comms Director caught real problems in content copy.** I ran the agent on live copy that needed a colleague's feedback incorporated. It produced a formal review with verdict, specific problem lines, draft reframes, and IP flags. When the content lead was unavailable to rewrite, the agent's draft reframe became the working document. The rubric made the review repeatable regardless of who was available that day. I used it on three separate content reviews over the two weeks.
+**The Comms Director caught real problems in content copy.** I ran the skill on live copy that needed a colleague's feedback incorporated. It produced a formal review with verdict, specific problem lines, draft reframes, and IP flags. When the content lead was unavailable to rewrite, the skill's draft reframe became the working document. The rubric made the review repeatable regardless of who was available that day. I used it on three separate content reviews over the two weeks.
 
-**The Ops Integrator became a daily tool.** The partner-assessment example is the most dramatic one. The agent pulled meeting minutes and task data from Notion and surfaced the actual state of an external relationship from the records instead of letting me make a decision based on how I felt. But the real value showed up in daily use: checking task distribution before standups, flagging bottlenecks before they became blockers, and getting a grounded read on team capacity instead of guessing. I have used it every working day since building it.
+**The Ops Integrator became a daily tool.** The partner-assessment example is the most dramatic one. The skill pulled meeting minutes and task data from Notion and surfaced the actual state of an external relationship from the records instead of letting me make a decision based on how I felt. But the real value showed up in daily use: checking task distribution before standups, flagging bottlenecks before they became blockers, and getting a grounded read on team capacity instead of guessing. I have used it every working day since building it.
 
 **The adversarial reviewer caught problems before they became expensive.** I ran it on a four-week investor-readiness sprint plan. It flagged missing owners, unclear definitions of done, and assumptions about leadership's availability that would have blown up the timeline. Without the review, those problems would have surfaced in Week 2 instead of before the sprint started. 
 
 **The weekly report generator eliminated manual synthesis.** Five databases, one formatted output. I ran it on two consecutive Fridays. The report still needs my review and editing, but the gathering and structuring work that used to take a couple of hours now takes minutes of review time.
 
-**Boundaries made the system trustworthy.** The most important design decision was defining what each agent cannot do. The Comms Director cannot judge technical accuracy, so it does not hallucinate technical assessments. The Ops Integrator cannot change task assignments, so it recommends instead of acting. Those constraints are what made me comfortable using the outputs on real work.
+**Boundaries made the system trustworthy.** The most important design decision was defining what each skill cannot do. The Comms Director cannot judge technical accuracy, so it does not hallucinate technical assessments. The Ops Integrator cannot change task assignments, so it recommends instead of acting. Those constraints are what made me comfortable using the outputs on real work.
 
 ---
 
@@ -67,7 +67,7 @@ For tasks requiring synthesis across many sources, I offload heavy document proc
 
 **The adversarial reviewer over-flags.** It applied the same evidence bar to a casual draft that it would use for a procurement document. I had to manually calibrate: "this is directional, not a board decision." The skill does not yet distinguish between document types automatically.
 
-**Token costs are real and unoptimized.** When the Ops Integrator reads meeting minutes, checks the tasks database, cross-references workloads, and produces an assessment, that is a lot of context. Multi-agent queries are expensive. I have not optimized for cost yet.
+**Token costs are real and unoptimized.** When the Ops Integrator reads meeting minutes, checks the tasks database, cross-references workloads, and produces an assessment, that is a lot of context. Multi-skill queries are expensive. I have not optimized for cost yet.
 
 **NotebookLM ingestion is fragile.** Authenticated Notion URLs sometimes failed to import. I had to export to markdown and re-upload. The `notebooklm-py` CLI reverse-engineers Google's internal protocols, so commands can break without warning. It is a power-user tool, not production infrastructure.
 
@@ -91,11 +91,11 @@ A few findings from independent research directly shaped how I designed the syst
 
 ## What I'd Tell Another Small Team
 
-**Start with what the agent cannot do.** The boundaries matter more than the capabilities. Those constraints are what make the system trustworthy enough to actually use.
+**Start with what the skill cannot do.** The boundaries matter more than the capabilities. Those constraints are what make the system trustworthy enough to actually use.
 
-**Write the specs before you build.** I wrote detailed agent specifications in Notion, had them reviewed by the team, and then implemented them as skills. The specs forced me to think about who decides what, which data each agent can see, what happens when something fails, and how work moves between agents and humans. That planning is what separates "I asked ChatGPT to help" from "I have a repeatable operational function."
+**Write the specs before you build.** I wrote detailed specifications in Notion, had them reviewed by the team, and then implemented them as skills. The specs forced me to think about who decides what, which data each skill can see, what happens when something fails, and how work moves between skills and humans. That planning is what separates "I asked ChatGPT to help" from "I have a repeatable operational function."
 
-**Use structured review as a quality gate.** The adversarial reviewer is the most valuable agent I built. It is the one that tells me when the other agents' outputs are wrong.
+**Use structured review as a quality gate.** The adversarial reviewer is the most valuable skill I built. It is the one that tells me when the other skills' outputs are wrong.
 
 **Accept the fragility.** I am building on unofficial APIs, consumer-tier AI tools, and a set of dependencies that changes weekly. `notebooklm-py` could break tomorrow. The architecture is sound, but the specific implementations are disposable. Design for replaceability.
 
