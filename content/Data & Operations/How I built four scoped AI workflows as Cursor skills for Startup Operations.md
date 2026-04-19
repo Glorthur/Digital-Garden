@@ -55,7 +55,7 @@ For tasks requiring synthesis across many sources, I offload heavy document proc
 
 **The Ops Integrator became a daily tool.** The partner-assessment example is the most dramatic one. The skill pulled meeting minutes and task data from Notion and surfaced the actual state of an external relationship from the records instead of letting me make a decision based on how I felt. But the real value showed up in daily use: checking task distribution before standups, flagging bottlenecks before they became blockers, and getting a grounded read on team capacity instead of guessing. I have used it every working day since building it.
 
-**The adversarial reviewer caught problems before they became expensive.** I ran it on a four-week investor-readiness sprint plan. It flagged missing owners, unclear definitions of done, and assumptions about leadership's availability that would have blown up the timeline. Without the review, those problems would have surfaced in Week 2 instead of before the sprint started. 
+**The adversarial reviewer caught problems before they became expensive.** I ran it on a four-week readiness sprint plan. It flagged missing owners, unclear definitions of done, and assumptions about leadership's availability that would have blown up the timeline. Without the review, those problems would have surfaced in Week 2 instead of before the sprint started. 
 
 **The weekly report generator eliminated manual synthesis.** Five databases, one formatted output. I ran it on two consecutive Fridays. The report still needs my review and editing, but the gathering and structuring work that used to take a couple of hours now takes minutes of review time.
 
