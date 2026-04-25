@@ -441,6 +441,7 @@ title: Gloria's Digital Garden
   <div class="dg-section">
   <h2>Latest</h2>
   <ul>
+    <li><a href="./Data--and--Operations/The-Architecture-of-Collaboration---What-Systems-Thinking-Is-Teaching-Me-About-People-Operations">The Architecture of Collaboration: What Systems Thinking Is Teaching Me About People Operations</a></li>
     <li><a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></li>
     <li><a href="./Data--and--Operations/Data-and-Operations">Data and Operations</a></li>
     <li><a href="./Data--and--Operations/Systems">Systems</a></li>

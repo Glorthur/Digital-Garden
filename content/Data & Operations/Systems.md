@@ -12,3 +12,6 @@ This section is for notes about structure: how tools, teams, and processes inter
 - process mapping
 - handoff risk
 - documentation
+
+**Notes**
+[[The Architecture of Collaboration - What Systems Thinking Is Teaching Me About People Operations]]
