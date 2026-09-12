@@ -5,13 +5,8 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
-  footer: Component.Footer({
-    links: {
-      Portfolio: "https://glorthur.github.io",
-      GitHub: "https://github.com/Glorthur/Digital-Garden",
-    },
-  }),
+  afterBody: [Component.ScrollbarAutohide()],
+  footer: Component.GardenFooter(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -50,13 +45,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
+    Component.GardenRail(),
     Component.ConditionalRender({
       component: Component.Graph(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    // Keep the right sidebar useful on the homepage (TOC),
-    // but avoid the heavier widgets like Graph/Backlinks.
-    Component.DesktopOnly(Component.TableOfContents()),
+    Component.ConditionalRender({
+      component: Component.DesktopOnly(Component.TableOfContents()),
+      condition: (page) => page.fileData.slug !== "index",
+    }),
     Component.ConditionalRender({
       component: Component.Backlinks(),
       condition: (page) => page.fileData.slug !== "index",
