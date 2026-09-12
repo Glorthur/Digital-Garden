@@ -23,6 +23,9 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import GardenRail from "./GardenRail"
+import GardenFooter from "./GardenFooter"
+import ScrollbarAutohide from "./ScrollbarAutohide"
 
 export {
   ArticleTitle,
@@ -50,4 +53,7 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  GardenRail,
+  GardenFooter,
+  ScrollbarAutohide,
 }

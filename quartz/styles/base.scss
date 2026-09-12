@@ -198,25 +198,6 @@ a {
     row-gap: #{map.get($desktopGrid, rowGap)};
     grid-template-areas: #{map.get($desktopGrid, templateAreas)};
 
-    // Home page: collapse the empty right column on desktop so content doesn't look
-    // like it has a huge "right margin".
-    body[data-slug="index"] & {
-      @media all and ($desktop) {
-        grid-template-columns: #{$sidePanelWidth} minmax(0, 1fr);
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-          "grid-sidebar-left grid-header"
-          "grid-sidebar-left grid-center"
-          "grid-sidebar-left grid-footer";
-      }
-
-      .sidebar.right {
-        @media all and ($desktop) {
-          display: none;
-        }
-      }
-    }
-
     @media all and ($tablet) {
       grid-template-columns: #{map.get($tabletGrid, templateColumns)};
       grid-template-rows: #{map.get($tabletGrid, templateRows)};

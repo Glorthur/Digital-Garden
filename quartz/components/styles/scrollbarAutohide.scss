@@ -1,0 +1,22 @@
+.scrollbar-autohide {
+  display: none;
+}
+
+html {
+  scrollbar-color: transparent transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+html.is-scrolling {
+  scrollbar-color: color-mix(in srgb, var(--darkgray) 48%, transparent) transparent;
+}
+
+html.is-scrolling::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--darkgray) 48%, transparent);
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
