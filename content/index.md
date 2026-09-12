@@ -1,13 +1,13 @@
 ---
-title: Gloria's Digital Garden
+title: The Commonplace Book
 ---
 
 <main class="garden-home">
   <header class="garden-masthead">
     <div class="garden-rule"><span></span><p>Working notes, in public</p><i>Est. 2024</i></div>
-    <h1>Gloria’s<br />Digital <em>Garden</em></h1>
+    <h1>The<br />Commonplace <em>Book</em></h1>
     <p class="garden-intro">Notes on data migration, CRM systems, operations, and learning. Some pages are polished, many are in progress, all are useful.</p>
-    <nav class="garden-actions" aria-label="Garden shortcuts">
+    <nav class="garden-actions" aria-label="Site shortcuts">
       <a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Start here: CRM migration <span>→</span></a>
       <a href="./tags">Browse tags</a>
       <a href="https://glorthur.github.io/">Portfolio</a>
@@ -20,7 +20,7 @@ title: Gloria's Digital Garden
       <div class="garden-feature-copy">
         <p class="garden-meta"><span>Data &amp; Operations</span><i></i><span class="garden-status">Evergreen</span></p>
         <h2 id="feature-title"><a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></h2>
-        <p>The best entry point to this garden: how to plan a migration, keep CRM data clean, and produce reporting people can actually trust.</p>
+        <p>A good place to begin: how to plan a migration, keep CRM data clean, and produce reporting people can actually trust.</p>
         <a class="garden-read" href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Read the note <b>→</b></a>
       </div>
       <a class="garden-feature-plate" href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems"><span>01 · the trunk</span></a>

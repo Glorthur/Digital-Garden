@@ -4,7 +4,7 @@ const GardenRail: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   if (fileData.slug !== "index") return null
 
   return (
-    <aside class="garden-rail" aria-label="Garden overview">
+    <aside class="garden-rail" aria-label="Site overview">
       <section class="garden-now">
         <p class="garden-rail-label">
           <span aria-hidden="true"></span> Now tending
