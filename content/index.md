@@ -42,6 +42,7 @@ title: The Commonplace Book
   <section class="garden-section garden-recent" aria-labelledby="recent-title">
     <div class="garden-section-label"><span id="recent-title">Recently tended</span><i></i><a href="./tags">All notes →</a></div>
     <div class="garden-notes">
+      <a href="./Personal-Essays/Two-subscriptions-and-a-watcher-script"><time>Nov 05</time><strong>Two subscriptions and a watcher script</strong><em>Working note</em></a>
       <a href="./Data--and--Operations/The-Architecture-of-Collaboration---What-Systems-Thinking-Is-Teaching-Me-About-People-Operations"><time>Sep 09</time><strong>The Architecture of Collaboration: What Systems Thinking Is Teaching Me About People Operations</strong><em>Seedling</em></a>
       <a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems"><time>Sep 06</time><strong>Data Migration and CRM Systems</strong><em>Data &amp; Ops</em></a>
       <a href="./Data--and--Operations/Systems"><time>Sep 02</time><strong>Systems</strong><em>Data &amp; Ops</em></a>
