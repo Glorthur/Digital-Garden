@@ -1,0 +1,212 @@
+/* Topic indexes share the garden's frame, with room for a readable collection. */
+:root body:not([data-slug="index"]):has(.garden-topic) .page {
+  #quartz-body {
+    grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "grid-sidebar-left grid-center"
+      "grid-sidebar-left grid-footer";
+  }
+  #quartz-body .sidebar.right {
+    display: none;
+  }
+  .center {
+    grid-area: grid-center;
+    min-width: 0;
+  }
+  .page-header .breadcrumb-container {
+    padding: 48px 64px 0;
+  }
+  .article-title {
+    padding: 0 64px;
+    margin-top: 28px;
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+  .page-header {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .page-footer {
+    padding-inline: 64px;
+  }
+  footer.garden-footer {
+    box-sizing: border-box;
+    min-width: 0;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .garden-topic {
+    box-sizing: border-box;
+    padding: 24px 64px 64px;
+    max-width: 1040px;
+    .topic-introduction > p {
+      margin: 0;
+      max-width: 52ch;
+      color: var(--darkgray);
+      font-size: 1.1rem;
+      line-height: 1.65;
+    }
+    .topic-about {
+      display: inline-block;
+      margin-top: 14px;
+      background: transparent;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: var(--lightgray);
+    }
+    .topic-authored-intro {
+      padding: 1.5rem 0;
+    }
+    .topic-listing {
+      margin-top: 42px;
+    }
+    .topic-list-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--lightgray);
+      h2 {
+        margin: 0;
+        font-family: var(--bodyFont);
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+      > span {
+        color: var(--darkgray);
+        font-size: 0.78rem;
+        white-space: nowrap;
+      }
+    }
+    .topic-notes {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .topic-note {
+      padding: 26px 0 24px;
+      border-bottom: 1px solid var(--lightgray);
+      h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 1.35;
+        font-weight: 600;
+      }
+      h3 > a {
+        display: inline;
+        background: transparent;
+        color: var(--dark);
+        text-decoration: none;
+      }
+      h3 > a:hover {
+        color: var(--secondary);
+      }
+    }
+    .topic-excerpt {
+      margin: 10px 0 0;
+      color: var(--darkgray);
+      font-size: 0.94rem;
+      line-height: 1.65;
+      max-width: 68ch;
+    }
+    .topic-note-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 20px;
+      margin-top: 14px;
+      color: var(--darkgray);
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+    .topic-date {
+      white-space: nowrap;
+    }
+    .topic-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 12px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      min-width: 0;
+    }
+    .topic-tags li {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      font-size: inherit;
+    }
+    a.topic-tag {
+      color: var(--darkgray);
+      background: transparent;
+      padding: 0;
+      font-size: inherit;
+      font-weight: 400;
+      overflow-wrap: anywhere;
+    }
+    a.topic-tag:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:focus-visible {
+      outline: 2px solid var(--secondary);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    .topic-empty {
+      margin: 24px 0 0;
+      color: var(--darkgray);
+    }
+  }
+  @media (max-width: 1000px) and (min-width: 801px) {
+    #quartz-body {
+      grid-template-columns: 240px minmax(0, 1fr);
+    }
+    .page-header .breadcrumb-container {
+      padding-inline: 32px;
+    }
+    .article-title {
+      padding-inline: 32px;
+    }
+    .garden-topic {
+      padding-inline: 32px;
+    }
+    .page-footer {
+      padding-inline: 32px;
+    }
+  }
+  @media (max-width: 800px) {
+    #quartz-body {
+      display: block;
+    }
+    .page-header .breadcrumb-container {
+      padding: 28px 20px 0;
+    }
+    .article-title {
+      padding-inline: 20px;
+      margin-top: 22px;
+      font-size: clamp(2.2rem, 8vw, 3rem);
+    }
+    .garden-topic {
+      padding: 20px 20px 40px;
+    }
+    .page-footer {
+      padding-inline: 20px;
+    }
+    .garden-topic .topic-listing {
+      margin-top: 32px;
+    }
+    .garden-topic .topic-note h3 {
+      font-size: 1.25rem;
+    }
+  }
+}
