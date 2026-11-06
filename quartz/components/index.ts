@@ -1,4 +1,5 @@
 import Content from "./pages/Content"
+import GardenAppreciation from "./GardenAppreciation"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
 import NotFound from "./pages/404"
@@ -56,4 +57,5 @@ export {
   GardenRail,
   GardenFooter,
   ScrollbarAutohide,
+  GardenAppreciation,
 }

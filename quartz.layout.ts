@@ -5,7 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.ScrollbarAutohide()],
+  afterBody: [Component.GardenAppreciation(), Component.ScrollbarAutohide()],
   footer: Component.GardenFooter(),
 }
 
