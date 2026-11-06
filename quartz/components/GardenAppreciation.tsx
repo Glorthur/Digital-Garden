@@ -30,7 +30,14 @@ export default (() => {
           title="A quiet nod. No account required."
         >
           <span class="garden-mark-glyph" aria-hidden="true">
-            <svg viewBox="0 0 48 48" fill="none">
+            <svg
+              viewBox="0 0 48 48"
+              width="48"
+              height="48"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
               <path
                 class="mark-orbit"
                 d="M35 7.8C26 2.5 13 6.6 7.8 16.3C2.6 26 7.3 38.7 17.8 41.3C28.4 44 39.5 36.9 41.1 27.4C41.9 22.8 40.5 17.1 37.8 13.7"

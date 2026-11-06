@@ -77,6 +77,16 @@ async function _navigate(url: URL, isBack: boolean = false) {
 
   if (!contents) return
 
+  const html = p.parseFromString(contents, "text/html")
+  const currentBuild = document.querySelector('meta[name="quartz-build"]')?.getAttribute("content")
+  const nextBuild = html.querySelector('meta[name="quartz-build"]')?.getAttribute("content")
+  // Persisted assets belong to the current build. Load the new document in full
+  // after a deployment instead of mixing new markup with old CSS and listeners.
+  if (nextBuild && currentBuild !== nextBuild) {
+    window.location.assign(url)
+    return
+  }
+
   // notify about to nav
   const event: CustomEventMap["prenav"] = new CustomEvent("prenav", { detail: {} })
   document.dispatchEvent(event)
@@ -85,7 +95,6 @@ async function _navigate(url: URL, isBack: boolean = false) {
   cleanupFns.forEach((fn) => fn())
   cleanupFns.clear()
 
-  const html = p.parseFromString(contents, "text/html")
   normalizeRelativeURLs(html, url)
 
   let title = html.querySelector("title")?.textContent
