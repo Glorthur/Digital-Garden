@@ -1053,6 +1053,9 @@ article:not(:has(.garden-home)) li {
    the article itself. */
 footer.garden-footer {
   align-items: center;
+  box-sizing: border-box;
+  min-width: 0;
+  flex-wrap: wrap;
   background-color: var(--garden-chrome);
   background-image: var(--garden-grain);
   border-top: 1px solid var(--garden-rule);
@@ -1084,6 +1087,7 @@ footer.garden-footer a:hover {
 footer.garden-footer nav {
   align-items: center;
   display: flex;
+  flex-shrink: 0;
   gap: 0.55rem;
 }
 
@@ -1094,6 +1098,8 @@ footer.garden-footer nav {
 
 .garden-social {
   align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
   border: 1px solid color-mix(in srgb, var(--garden-cobalt) 35%, transparent);
   border-radius: 50%;
   display: inline-flex;
