@@ -1191,6 +1191,13 @@ footer.garden-footer nav {
 }
 
 @media (max-width: 800px) {
+  body:not([data-slug="index"]) #quartz-body {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  :root[saved-theme="dark"] body:not([data-slug="index"]) #quartz-body .sidebar.left {
+    flex-wrap: wrap;
+    min-width: 0;
+  }
   body[data-slug="index"] .page {
     margin: 0;
   }
@@ -1287,9 +1294,24 @@ footer.garden-footer nav {
     padding: 30px 20px 0;
   }
   :root:not([saved-theme="dark"]) body:not([data-slug="index"]) .article-title {
-    font-size: clamp(2.25rem, 13vw, 3.5rem);
     margin-top: 26px;
     padding: 0 20px;
+  }
+  :root body:not([data-slug="index"]) .page-header .article-title {
+    font-size: clamp(1.75rem, 7.2vw, 2rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  /* The heading identifies the current note; mobile breadcrumbs only need its parents. */
+  body:not([data-slug="index"]):not(:has(.garden-topic))
+    .breadcrumb-container
+    .breadcrumb-element:last-child:not(:first-child),
+  body:not([data-slug="index"]):not(:has(.garden-topic))
+    .breadcrumb-container
+    .breadcrumb-element:has(+ .breadcrumb-element:last-child)
+    > p {
+    display: none;
   }
   :root:not([saved-theme="dark"]) body:not([data-slug="index"]) .content-meta,
   :root:not([saved-theme="dark"]) body:not([data-slug="index"]) .tags {
