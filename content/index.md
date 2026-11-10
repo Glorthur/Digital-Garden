@@ -14,6 +14,12 @@ title: The Commonplace Book
     </nav>
   </header>
 
+  <section class="garden-author" aria-labelledby="garden-author-title">
+    <img class="garden-author-portrait" src="./assets/gloria-arthur-portrait-bw.webp" alt="Gloria Arthur wearing glasses and a denim jacket, in black and white" width="480" height="600" decoding="async" />
+    <h2 id="garden-author-title">I’m Gloria Arthur.</h2>
+    <p>I write about people, systems and what happens to a beautiful plan once other people get involved. This garden holds my working notes, longer essays and questions I haven’t managed to leave alone. I reserve the right to argue with my earlier self.</p>
+  </section>
+
   <section class="garden-section garden-feature-section" aria-labelledby="feature-title">
     <div class="garden-section-label"><span>Featured note</span><i></i></div>
     <div class="garden-feature">

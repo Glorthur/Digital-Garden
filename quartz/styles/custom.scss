@@ -354,6 +354,7 @@ body[data-slug="index"] .page-footer a {
 
 .garden-home {
   color: var(--garden-ink);
+  container-type: inline-size;
 }
 .garden-masthead {
   display: block;
@@ -489,6 +490,71 @@ body[data-slug="index"] .garden-home .garden-feature-plate.internal {
 .garden-section {
   margin-top: 48px;
 }
+
+.garden-author {
+  align-items: start;
+  border-block: 1px solid var(--garden-rule);
+  column-gap: 24px;
+  display: grid;
+  grid-template-areas:
+    "portrait title"
+    "portrait bio";
+  grid-template-columns: 136px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  margin-top: 36px;
+  padding-block: 28px;
+  row-gap: 10px;
+}
+
+.garden-author .garden-author-portrait {
+  aspect-ratio: 4 / 5;
+  border-radius: 2px;
+  display: block;
+  grid-area: portrait;
+  height: auto;
+  margin: 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+.garden-author h2 {
+  color: var(--garden-ink);
+  font-family: var(--headerFont);
+  font-size: 25px;
+  font-weight: 600;
+  grid-area: title;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.garden-author p {
+  color: var(--garden-graphite);
+  font-family: var(--headerFont);
+  font-size: 17px;
+  grid-area: bio;
+  line-height: 1.55;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+@container (max-width: 440px) {
+  .garden-author {
+    column-gap: 20px;
+    grid-template-areas:
+      "portrait title"
+      "bio bio";
+    grid-template-columns: 96px minmax(0, 1fr);
+    padding-block: 24px;
+    row-gap: 18px;
+  }
+
+  .garden-author h2 {
+    align-self: center;
+  }
+}
+
 .garden-section-label {
   gap: 12px;
   margin-bottom: 16px;
@@ -1153,7 +1219,7 @@ footer.garden-footer nav {
     padding: 42px 16px 48px;
   }
   .garden-masthead h1 {
-    font-size: 50px;
+    font-size: clamp(34px, 10.5vw, 50px);
   }
   .garden-intro {
     font-size: 17px;
