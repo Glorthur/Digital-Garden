@@ -6,12 +6,7 @@ title: The Commonplace Book
   <header class="garden-masthead">
     <div class="garden-rule"><span></span><p>Working notes, in public</p><i>Est. 2024</i></div>
     <h1>The<br />Commonplace <em>Book</em></h1>
-    <p class="garden-intro">Notes on data migration, CRM systems, operations, and learning. Some pages are polished, many are in progress, all are useful.</p>
-    <nav class="garden-actions" aria-label="Site shortcuts">
-      <a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Start here: CRM migration <span>→</span></a>
-      <a href="./tags">Browse tags</a>
-      <a href="https://glorthur.github.io/">Portfolio</a>
-    </nav>
+    <p class="garden-intro">Some pages are polished, many are in progress, all are useful.</p>
   </header>
 
   <section class="garden-author" aria-labelledby="garden-author-title">
@@ -20,16 +15,22 @@ title: The Commonplace Book
     <p>I write about people, systems and what happens to a beautiful plan once other people get involved. This garden holds my working notes, longer essays and questions I haven’t managed to leave alone. I reserve the right to argue with my earlier self.</p>
   </section>
 
+  <nav class="garden-actions" aria-label="Site shortcuts">
+    <a href="./Personal-Essays/Two-subscriptions-and-a-watcher-script">Read the featured essay <span>→</span></a>
+    <a href="./tags">Browse tags</a>
+    <a href="https://glorthur.github.io/">Portfolio</a>
+  </nav>
+
   <section class="garden-section garden-feature-section" aria-labelledby="feature-title">
     <div class="garden-section-label"><span>Featured note</span><i></i></div>
     <div class="garden-feature">
       <div class="garden-feature-copy">
-        <p class="garden-meta"><span>Data &amp; Operations</span><i></i><span class="garden-status">Evergreen</span></p>
-        <h2 id="feature-title"><a href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Data Migration and CRM Systems</a></h2>
-        <p>A good place to begin: how to plan a migration, keep CRM data clean, and produce reporting people can actually trust.</p>
-        <a class="garden-read" href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems">Read the note <b>→</b></a>
+        <p class="garden-meta"><span>Personal Essays</span><i></i><span class="garden-status">Working note</span></p>
+        <h2 id="feature-title"><a href="./Personal-Essays/Two-subscriptions-and-a-watcher-script">Two subscriptions and a watcher script</a></h2>
+        <p>Notes from a month of running an AI team.</p>
+        <blockquote class="garden-feature-excerpt"><p>“Most of what I ended up managing was the space between them, and my own instructions.”</p></blockquote>
+        <a class="garden-read" href="./Personal-Essays/Two-subscriptions-and-a-watcher-script">Read the essay <b>→</b></a>
       </div>
-      <a class="garden-feature-plate" href="./Data-Migration--and--CRM-Systems/Data-Migration-and-CRM-Systems"><span>01 · the trunk</span></a>
     </div>
   </section>
 

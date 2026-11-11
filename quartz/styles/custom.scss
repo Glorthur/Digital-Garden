@@ -147,7 +147,7 @@ body[data-slug="index"] #quartz-body .sidebar.right {
 
 body[data-slug="index"] .center > article {
   max-width: none;
-  padding: 64px 72px 72px;
+  padding: 48px 72px 72px;
 }
 
 body[data-slug="index"] .page-footer {
@@ -442,7 +442,7 @@ body[data-slug="index"] .garden-home .garden-feature-plate.internal {
 
 .garden-masthead h1 {
   font-family: var(--headerFont);
-  font-size: clamp(46px, 4.6vw, 66px);
+  font-size: clamp(40px, 4vw, 56px);
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.02;
@@ -501,7 +501,7 @@ body[data-slug="index"] .garden-home .garden-feature-plate.internal {
     "portrait bio";
   grid-template-columns: 136px minmax(0, 1fr);
   grid-template-rows: auto 1fr;
-  margin-top: 36px;
+  margin-top: 24px;
   padding-block: 28px;
   row-gap: 10px;
 }
@@ -575,12 +575,25 @@ body[data-slug="index"] .garden-home .garden-feature-plate.internal {
   border-radius: 8px;
   color: var(--garden-ink);
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 200px;
+  grid-template-columns: minmax(0, 1fr);
   overflow: hidden;
 }
 
 .garden-feature-copy {
   padding: 24px 26px 22px;
+}
+.garden-feature-excerpt {
+  border: 0;
+  border-top: 1px solid var(--garden-rule);
+  margin: 22px 0 0;
+  padding: 18px 0 0;
+}
+.garden-feature-excerpt p {
+  color: var(--garden-graphite);
+  font-family: var(--headerFont);
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
 }
 .garden-meta {
   align-items: center;
@@ -1236,6 +1249,10 @@ footer.garden-footer nav {
   }
   .garden-feature {
     grid-template-columns: 1fr;
+  }
+  .garden-feature h2 {
+    font-size: 26px;
+    line-height: 1.2;
   }
   .garden-feature-plate {
     min-height: 104px;
